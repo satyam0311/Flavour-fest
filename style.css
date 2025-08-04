@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  background: #111;
+  color: #fff;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.name h1 {
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+.tagline p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navigation li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.navigation li:hover {
+  background: #444;
+}
+
+/* Hero Section */
+#hero {
+  background: url('restaurant.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+.welcome {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.discription {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+.book-now {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.book-now:hover {
+  background-color: #e60000;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.top {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Menu */
+.dish {
+  margin-bottom: 30px;
+}
+.dish h3 {
+  color: #c0392b;
+}
+.price {
+  font-weight: bold;
+}
+.info {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Gallery */
+.image {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+.pic img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.pic img:hover {
+  transform: scale(1.05);
+}
+
+/* Reservation Form */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input, button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.submit {
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.submit:hover {
+  background-color: #1e8449;
+}
+
+/* Contact */
+#contact {
+  background: #eee;
+  padding: 40px;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}

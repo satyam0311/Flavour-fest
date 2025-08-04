@@ -1,0 +1,235 @@
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+  :root {
+  --primary: #8b0000;
+  --light: #f5f1ea;
+}
+}
+*{margin: 0px ;
+  padding: 0px;
+}
+/* Background: Light */
+body {
+  background-color: #f5f1ea;
+  color: #3e2c1c;
+  font-family:'Playfair Display', serif;
+}
+
+/* Header + Footer */
+header, footer {
+  background-color: #8b0000;
+  color: white;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  margin:0px;
+  padding:0px;
+}
+.logo img {
+  width: 10vw;
+  border-radius: 50%;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+}
+.tagline{
+  display:flex;
+  justify-content: center;
+  font-family: cursive;
+}
+.navigation{
+  display: flex;
+  justify-content: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin: auto;
+
+}
+.navigation ul li {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center ;
+  margin: auto;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+#hero{
+border: 1.5px solid;
+width: 90vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+padding: 15px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.book-now {
+  background-color: #8b0000; /* black background */
+  color: #fff; /* white text */
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin: 25px auto;
+}
+
+.book-now:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Orange design dots (like image) */
+.book-now::before,
+.book-now::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.book-now::before {
+  top: -5px;
+  left: 20px;
+}
+
+.book-now::after {
+  bottom: -5px;
+  right: 20px;
+}
+#Menu{
+border: 1.5px solid;
+width: 90vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+padding: 15px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.dish{
+  margin: 15px;
+}
+.info{
+  font-style: initial;
+  font-size: 0.7em;
+}
+
+#Gallery{
+  border: 1.5px solid ;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.top{
+  text-transform: uppercase;
+  margin: auto;
+  background-image: url(/scratch.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 50px;
+}
+.image{
+  margin: 15px auto 15px auto;
+}
+.pic{
+  display: flex;
+  justify-content: center;
+  }
+  
+img{
+  width: 75vw;
+  border-radius: 10%;
+}
+figcaption{
+  display:flex;
+  justify-content: center;
+  font-style: italic;
+  font-family: cursive;
+}
+#reservation{
+  border: 1.5px solid ;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.form-group{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.submit{
+  width: 15vw;
+  height: 3vh;
+  margin: 25px auto;
+  background-color:#8b0000;
+  color: white;
+}
+#contact{
+  border: 1.5px solid ;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+}
+
+/* Active Nav Highlight */
+.navigation li.active {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Fade-in Animation */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+.section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
